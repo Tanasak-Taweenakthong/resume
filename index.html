@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume - ธนศักดิ์ ทวีนากทอง</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 1. การใช้รูป Display แบบวงกลม */
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0d6efd;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    /* Smooth Scroll สำหรับ Anchor Link (ข้อ 10) */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 9. Navbar แบบ Toggle ตาม Section (Responsive + Hamburger button) & 10. Anchor Link -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#about">My Resume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับฉัน</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">การศึกษา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">ทักษะ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#other">ผลงาน/โครงการ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    
+    <!-- Header ส่วนโปรไฟล์ -->
+    <div class="text-center mb-4">
+      <!-- 1. การใช้รูป Display แบบวงกลม -->
+      <img src="profile.jpg" alt="ธนศักดิ์ ทวีนากทอง" class="profile-img mb-3">
+      
+      <!-- 2. ชื่อ-นามสกุลแบบ h1 -->
+      <h1>นายธนศักดิ์ ทวีนากทอง</h1>
+      
+      <!-- 3. สาขาวิชาเป็นตัวเอียง em -->
+      <p class="fs-5">สาขาวิชา: <em>เทคโนโลยีสารสนเทศ (Information Technology)</em></p>
+      
+      <!-- 4. ชื่อคณะ -->
+      <p class="fs-5">คณะเทคโนโลยีดิจิทัลและสารสนเทศ</p>
+      
+      <!-- 5. ชื่อสถาบันฯ มีลิงก์ไปยังเว็บสถาบัน -->
+      <p>สถาบันการจัดการปัญญาภิวัฒน์ (<a href="http://pim.ac.th" target="_blank">http://pim.ac.th</a>)</p>
+      
+      <!-- 6. ประวัติโดยย่อของตนเอง -->
+      <p class="lead text-muted">นักศึกษาที่มีความสนใจด้านการพัฒนาเว็บแอปพลิเคชัน มุ่งมั่นเรียนรู้เทคโนโลยีใหม่ๆ และพร้อมเปิดรับโอกาสในการฝึกงาน</p>
+    </div>
+
+    <!-- 7. เส้นแบ่งย่อหน้า -->
+    <hr class="my-5">
+
+    <!-- 8. Section ต่างๆ -->
+    
+    <!-- Section: เกี่ยวกับฉัน (About Me) -->
+    <section id="about" class="mb-5">
+      <h2>เกี่ยวกับฉัน (About Me)</h2>
+      <p>ผมคือ นายธนศักดิ์ ทวีนากทอง นักศึกษาที่หลงใหลในการเขียนโค้ดและการพัฒนาเว็บไซต์ ชอบแก้ปัญหาทางเทคโนโลยี และสนใจเรียนรู้เทคโนโลยีซอฟต์แวร์ใหม่ๆ เสมอ</p>
+    </section>
+
+    <!-- Section: การศึกษา (Education) -->
+    <section id="education" class="mb-5">
+      <h2>การศึกษา (Education)</h2>
+      <ul>
+        <li><strong>ปริญญาตรี:</strong> สถาบันการจัดการปัญญาภิวัฒน์ (กำลังศึกษา)</li>
+        <li><strong>มัธยมศึกษาตอนปลาย:</strong> โรงเรียนสีคิ้ว สวัสดิ์ผดุงวิทยา</li>
+      </ul>
+    </section>
+
+    <!-- Section: ทักษะ (Skills) -->
+    <section id="skills" class="mb-5">
+      <h2>ทักษะ (Skills)</h2>
+      <ul>
+        <li>HTML5 / CSS3 / JavaScript</li>
+        <li>Bootstrap Framework</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!-- 11. Responsive Display (Desktop 4 แถว, Tablet 2 แถว, มือถือ 1 แถว) -->
+    <section id="other" class="mb-5">
+      <h2>ผลงาน / ข้อมูลเพิ่มเติม (Other)</h2>
+      <div class="row g-3 text-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border bg-light rounded shadow-sm">
+            <h5>โปรเจกต์ 1</h5>
+            <p class="text-muted mb-0">ระบบจัดการข้อมูล</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border bg-light rounded shadow-sm">
+            <h5>โปรเจกต์ 2</h5>
+            <p class="text-muted mb-0">เว็บไซต์แนะนำสถานที่ท่องเที่ยว</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border bg-light rounded shadow-sm">
+            <h5>โปรเจกต์ 3</h5>
+            <p class="text-muted mb-0">แอปพลิเคชันบันทึกรายรับ-รายจ่าย</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border bg-light rounded shadow-sm">
+            <h5>โปรเจกต์ 4</h5>
+            <p class="text-muted mb-0">ระบบร้านค้าออนไลน์</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- 12. ช่องทางติดต่อกลับ -->
+    <section id="contact">
+      <h2>ช่องทางการติดต่อ (Contact)</h2>
+      <!-- 12.1 ใช้ Ordered List (ol) -->
+      <ol>
+        <!-- 12.2 อีเมลสถาบันฯ/ส่วนตัว (หลีกเลี่ยงการโดนสแปม) -->
+        <li><strong>อีเมล:</strong> TheOwlGamerNew [at] gmail.com</li>
+        
+        <!-- 12.3 เบอร์โทรศัพท์ -->
+        <li><strong>เบอร์โทรศัพท์:</strong> 0930681861</li>
+        
+        <!-- 12.4 ที่อยู่ -->
+        <li><strong>ที่อยู่:</strong> 79 หมู่ที่ 15 ต.ลาดบัวขาว อ.สีคิ้ว จ.นครราชสีมา</li>
+        
+        <!-- 12.5 อื่นๆ (GitHub Link) -->
+        <li><strong>GitHub:</strong> <a href="https://github.com/Tanasak-Taweenakthong" target="_blank">https://github.com/Tanasak-Taweenakthong</a></li>
+      </ol>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
